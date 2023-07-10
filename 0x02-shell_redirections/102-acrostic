@@ -1,0 +1,2 @@
+#!/bin/bash
+input=$(cat); decoded_message=$(cut -c 1 <<< "$input"); echo -e "$decoded_message"
