@@ -1,2 +1,3 @@
 #!/bin/bash
-cut -c 1 | paste -s -d ''
+find . -type f -iname "*.gif" -printf "%f\n" | sed 's/\.gif$//' | LC_COLLATE=C sort
+echo
