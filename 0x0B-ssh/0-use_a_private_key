@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Bash csript that uses ssh to connect to a server
+# Using private key ~/.ssh/school
+# User ubuntu
+ssh ubuntu@35.168.2.29 -i ~/.ssh/school
