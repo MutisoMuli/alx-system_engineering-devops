@@ -1,7 +1,6 @@
-# A puppet manifest that creates a file school in /tmp
-# The school file has permission 0744
-# Belongs to user www-data
-# Belongs to group www-data
+# A puppet manifest that creates a file school in /tmp.
+# The file (School) has permissions 0744, belonging to the user and group
+# www-data.
 file { '/tmp/school':
   ensure  => present,
   mode    => '0744',
@@ -9,4 +8,3 @@ file { '/tmp/school':
   group   => 'www-data',
   content => 'I love Puppet',
 }
-
