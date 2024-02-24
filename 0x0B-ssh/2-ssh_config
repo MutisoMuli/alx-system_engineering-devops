@@ -1,4 +1,8 @@
-#!/usr/bin/env bash
-# Bash script that creates an RSA key pair
-# ssh-keygen -b 4096 -p betty -f school
-ssh-keygen -t rsa -b 4096 -p betty -f school
+# Configures ssh client so that you can connect
+# to a server without a passord
+    SendEnv LANG LC_*
+    HashKnowHosts yes
+    GSSAPIAuthentication yes
+    GSSAPIDelegateCredentials no
+    IdentifyFile ~/.ssh/school
+    PasswordAuthentication no
