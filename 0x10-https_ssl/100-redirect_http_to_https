@@ -41,11 +41,11 @@ frontend mutisomuli-frontend
         default_backend mutisomuli-backend
 
 frontend mutisomuli-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/clickviral.tech.pem
+        bind *:443 ssl crt /etc/haproxy/certs/www.mutisomuli.tech.pem
         http-request set-header X-Forwarded-Proto https
         default_backend mutisomuli-backend
 
-backend clickviral-backend
+backend mutisomuli-backend
         balance roundrobin
         server 480221-web-01 54.146.72.218:80 check
         server 480221-web-02 54.90.54.72:80 check
